@@ -5,9 +5,11 @@ const { clientId, guildId, token } = require('./config.json');
 
 
 const commands = [
-	new SlashCommandBuilder().setName('summon').setDescription('Replies with a random Cian variant!'),
-	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
-	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+	new SlashCommandBuilder().setName('summon').setDescription('Random Cian variant!'),
+	new SlashCommandBuilder().setName('am').setDescription('Good morning!'),
+	new SlashCommandBuilder().setName('pm').setDescription('Quite a night!'),
+	new SlashCommandBuilder().setName('server').setDescription('Server info'),
+	new SlashCommandBuilder().setName('user').setDescription('User info'),
 ]
 	.map(command => command.toJSON());
 
